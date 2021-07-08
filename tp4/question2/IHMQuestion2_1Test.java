@@ -4,6 +4,9 @@ import java.awt.Robot;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import org.junit.Test;
+
 import java.util.*;
 import java.util.Random;
 
