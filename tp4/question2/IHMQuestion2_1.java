@@ -25,15 +25,21 @@ public class IHMQuestion2_1 extends JFrame {
                                 // la description des constructeurs
         enHaut.setBackground(Color.blue);
         setLocation(100,100);
-        pack();show();
+        pack();
+        show();
 
+        
+        
         // à compléter
         // le bouton A a 3 observateurs jbo1, jbo2 et jbo3
-
+        boutonA.addActionListener(new JButtonObserver("jbo1", contenu));
+        boutonA.addActionListener(new JButtonObserver("jbo2", contenu));
+        boutonA.addActionListener(new JButtonObserver("jbo3", contenu));
         // le bouton B a 2 observateurs jbo1 et jbo2
-
+        boutonB.addActionListener(new JButtonObserver("jbo1", contenu));
+        boutonB.addActionListener(new JButtonObserver("jbo2", contenu));
         // le bouton C a 1 observateur jbo1
-
+        boutonC.addActionListener(new JButtonObserver("jbo1", contenu));
       
     }
     
