@@ -9,7 +9,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * Décrivez votre classe Controleur ici.
+ * DÃ©crivez votre classe Controleur ici.
  * 
  * @author ZIAD DAOUD
  * @version 07/07/2021
@@ -34,7 +34,7 @@ public class Controleur extends JPanel {
 
 		setLayout(new GridLayout(2, 1));
 		add(donnee);
-		donnee.addActionListener(null /* null est à remplacer */);
+		donnee.addActionListener(null /* null est Ã  remplacer */);
 		JPanel boutons = new JPanel();
 		boutons.setLayout(new FlowLayout());
 
@@ -162,5 +162,41 @@ public class Controleur extends JPanel {
 		}
 		this.actualiserInterface();
 	}
+	
+	// REPONSE AU QUESTION 3.2
+	
+	/*
+	 * Cette architecture offre plein d'avantages parce qu'on peut distribuer le
+	 * traitement du code d'une facon bien structurée. Par example ici une vue n'a
+	 * aucun travail que d'afficher مles données venant du modele qui est la pile,
+	 * la vue ne fait pas du traitement comme des architecture anciennes. Le
+	 * controlleur est responsable de la gestion entre le modele et la vue,
+	 * l'intermédiaire entre le modèle et la vue. Je vois que cette architecture est
+	 * très utile et elle est consideré la base du developpement des applications web
+	 * modernes.
+	 * 
+	 * Ajoutant une chose important, c'est quand on adapte cette architecture à la base on peut
+	 * ajoutant des vues indépendamment en les laisser utiliser le meme modele
+	 * 
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
